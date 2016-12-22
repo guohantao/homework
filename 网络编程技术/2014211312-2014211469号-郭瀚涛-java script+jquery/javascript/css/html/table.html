@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通讯录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .fix
+        {
+            position: fixed;
+            right: 50%;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>
+                        姓名
+                    </th>
+                    <th>
+                        电话
+                    </th>
+                    <th>
+                        邮箱
+                    </th>
+                    <th>
+                        住址
+                    </th>
+                    <th>
+                        QQ
+                    </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        张三
+                    </td>
+                    <td>
+                        18562052016
+                    </td>
+                    <td>
+                        6255@qq.com
+                    </td>
+                    <td>
+                    Default
+                    </td>
+                    <td>
+                        6255
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        李四
+                    </td>
+                    <td>
+                        13025468214
+                    </td>
+                    <td>
+                        454812@qq.com
+                    </td>
+                    <td>
+                        Default
+                    </td>
+                    <td>
+                        454812
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        王五
+                    </td>
+                    <td>
+                        18645802014
+                    </td>
+                    <td>
+                        89546@qq.com
+                    </td>
+                    <td>
+                        Default
+                    </td>
+                    <td>
+                        89546
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-default"><a href="add.html" style="color: #1f2021">增加</a></button>
+            <button type="button" class="btn btn-default">删除</button>
+            <button type="button" class="btn btn-default">编辑</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

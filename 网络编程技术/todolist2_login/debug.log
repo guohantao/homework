@@ -1,0 +1,797 @@
+XXXXXXXXXXXXXXXXXXXXXXXXlogging
+"GET / HTTP/1.1" 200 2123
+XXXXXXXXXXXXXXXXXXXXXXXXlogging
+"GET / HTTP/1.1" 200 2123
+"GET / HTTP/1.1" 200 2123
+"GET / HTTP/1.1" 200 2123
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2016-12-06 23:34:06,072 utils 21572 21804 (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-06 23:34:06,075 utils 21572 21804 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-06 23:34:06,345 views 21572 22416 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-06 23:34:06,355 utils 21572 22416 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-06 23:34:06,358 basehttp 21572 22416 "GET / HTTP/1.1" 200 2123
+INFO 2016-12-06 23:47:10,714 views 21572 21748 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-06 23:47:10,726 utils 21572 21748 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-06 23:47:10,730 basehttp 21572 21748 "GET / HTTP/1.1" 200 2123
+DEBUG 2016-12-07 09:09:52,489 utils 20608 23520 (0.004) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-07 09:09:52,496 utils 20608 23520 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-07 09:10:06,961 views 20608 19644 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:10:07,019 utils 20608 19644 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:10:07,028 basehttp 20608 19644 "GET / HTTP/1.1" 200 2123
+DEBUG 2016-12-07 09:10:30,108 utils 20608 18416 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nigh69prbu2zbxqmpt7o0zw0ztnof9v6' AND "django_session"."expire_date" > '2016-12-07 01:10:30.105000'); args=('nigh69prbu2zbxqmpt7o0zw0ztnof9v6', u'2016-12-07 01:10:30.105000')
+DEBUG 2016-12-07 09:10:30,157 utils 20608 18416 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+DEBUG 2016-12-07 09:10:30,244 base 20608 18416 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033A1570>>, 'user': <SimpleLazyObject: <User: admin>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033D6B50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0334E6F0>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x03376330>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03339150>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x03339BB0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x03324D10>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03339C10>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x0323AE30>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:10:30,253 base 20608 18416 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033A1570>>, 'user': <SimpleLazyObject: <User: admin>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033D6B50>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0334E6F0>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x03376330>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03339150>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x03339BB0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x03324D10>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03339C10>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x0323AE30>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:10:30,266 utils 20608 18416 (0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 1 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(1,)
+INFO 2016-12-07 09:10:30,269 basehttp 20608 18416 "GET /admin/ HTTP/1.1" 200 4073
+DEBUG 2016-12-07 09:10:36,749 utils 20608 21072 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'nigh69prbu2zbxqmpt7o0zw0ztnof9v6' AND "django_session"."expire_date" > '2016-12-07 01:10:36.741000'); args=('nigh69prbu2zbxqmpt7o0zw0ztnof9v6', u'2016-12-07 01:10:36.741000')
+DEBUG 2016-12-07 09:10:36,750 utils 20608 21072 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+DEBUG 2016-12-07 09:10:36,753 utils 20608 21072 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'nigh69prbu2zbxqmpt7o0zw0ztnof9v6'; args=('nigh69prbu2zbxqmpt7o0zw0ztnof9v6',)
+DEBUG 2016-12-07 09:10:36,753 utils 20608 21072 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:10:36,756 utils 20608 21072 (0.003) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('nigh69prbu2zbxqmpt7o0zw0ztnof9v6'); args=(u'nigh69prbu2zbxqmpt7o0zw0ztnof9v6',)
+DEBUG 2016-12-07 09:10:36,907 base 20608 21072 Exception while resolving variable 'is_popup' in template 'registration/logged_out.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0336FB30>>, 'user': <django.contrib.auth.models.AnonymousUser object at 0x033EE7F0>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033F1330>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033EE590>, u'request': <WSGIRequest: GET '/admin/logout/'>}, {}, {'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x033F1070>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x033F12F0>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x033EE290>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_name': '127.0.0.1:8000', 'title': u'Logged out', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'site': <django.contrib.sites.requests.RequestSite object at 0x0334E770>, 'site_url': '/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, u'LANGUAGE_BIDI': False}]"
+DEBUG 2016-12-07 09:10:36,907 base 20608 21072 Exception while resolving variable 'is_popup' in template 'registration/logged_out.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0336FB30>>, 'user': <django.contrib.auth.models.AnonymousUser object at 0x033EE7F0>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033F1330>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033EE590>, u'request': <WSGIRequest: GET '/admin/logout/'>}, {}, {'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x033F1070>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x033F12F0>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x033EE290>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_name': '127.0.0.1:8000', 'title': u'Logged out', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'site': <django.contrib.sites.requests.RequestSite object at 0x0334E770>, 'site_url': '/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, u'LANGUAGE_BIDI': False}]"
+INFO 2016-12-07 09:10:36,911 basehttp 20608 21072 "GET /admin/logout/ HTTP/1.1" 200 1014
+INFO 2016-12-07 09:10:41,730 basehttp 20608 23484 "GET /admin/ HTTP/1.1" 302 0
+DEBUG 2016-12-07 09:10:41,792 base 20608 19328 Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033277F0>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x033E71F0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033D6AD0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033E7110>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'site': <django.contrib.sites.requests.RequestSite object at 0x033E7D30>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+DEBUG 2016-12-07 09:10:41,792 base 20608 19328 Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033277F0>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x033E71F0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033D6AD0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033E7110>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'site': <django.contrib.sites.requests.RequestSite object at 0x033E7D30>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+INFO 2016-12-07 09:10:41,799 basehttp 20608 19328 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1657
+DEBUG 2016-12-07 09:11:16,401 utils 23040 10372 (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-07 09:11:16,404 utils 23040 10372 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2016-12-07 09:11:16,405 utils 23040 10372 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'wzl'; args=(u'wzl',)
+DEBUG 2016-12-07 09:11:23,154 utils 23040 10372 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'wzl'; args=('wzl',)
+DEBUG 2016-12-07 09:11:33,404 utils 23040 10372 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:11:33,407 utils 23040 10372 (0.002) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$30000$XdaEFVNnFOd0$dQix2oHFnnK/xSvzedLd6VrzOB5LBKgUvJv1p/5MRPU=', NULL, 1, 'wzl', '', '', '', 1, 1, '2016-12-07 01:11:33.351000'); args=[u'pbkdf2_sha256$30000$XdaEFVNnFOd0$dQix2oHFnnK/xSvzedLd6VrzOB5LBKgUvJv1p/5MRPU=', None, True, u'wzl', u'', u'', u'', True, True, u'2016-12-07 01:11:33.351000']
+DEBUG 2016-12-07 09:12:13,736 base 20608 22928 Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0344B7B0>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03376830>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0343DF70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033765B0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'site': <django.contrib.sites.requests.RequestSite object at 0x033DE8D0>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+DEBUG 2016-12-07 09:12:13,736 base 20608 22928 Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0344B7B0>>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x03376830>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0343DF70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033765B0>, u'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>}, {}, {'username': u'', 'app_path': u'/admin/login/?next=/admin/', 'available_apps': [], 'site_name': '127.0.0.1:8000', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'title': u'Log in', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'site': <django.contrib.sites.requests.RequestSite object at 0x033DE8D0>, 'next': u'/admin/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, u'LANGUAGE_CODE': 'en-us', 'has_permission': False, 'site_url': '/', u'LANGUAGE_BIDI': False}]"
+INFO 2016-12-07 09:12:13,742 basehttp 20608 22928 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1657
+INFO 2016-12-07 09:12:13,930 basehttp 20608 22920 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2016-12-07 09:12:13,931 basehttp 20608 23200 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2016-12-07 09:12:14,154 basehttp 20608 21072 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2016-12-07 09:12:14,174 basehttp 20608 19328 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2016-12-07 09:12:14,180 basehttp 20608 20400 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+DEBUG 2016-12-07 09:12:22,447 utils 20608 4496 (0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'wzl'; args=(u'wzl',)
+DEBUG 2016-12-07 09:12:22,500 utils 20608 4496 (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' LIMIT 1; args=(u'zv5vyyawmmsbwk4r756ni93dyoneuydu',)
+DEBUG 2016-12-07 09:12:22,502 utils 20608 4496 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:12:22,507 utils 20608 4496 (0.005) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'zv5vyyawmmsbwk4r756ni93dyoneuydu', 'Y2QxNTM5ZDY1YTFlM2EyNTYxYTQ2ZjhkN2M2MmNjN2YyY2Q4NWQwMjp7fQ==', '2016-12-21 01:12:22.502000'; args=(u'zv5vyyawmmsbwk4r756ni93dyoneuydu', u'Y2QxNTM5ZDY1YTFlM2EyNTYxYTQ2ZjhkN2M2MmNjN2YyY2Q4NWQwMjp7fQ==', u'2016-12-21 01:12:22.502000')
+DEBUG 2016-12-07 09:12:22,634 utils 20608 4496 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:12:22,641 utils 20608 4496 (0.006) UPDATE "auth_user" SET "last_login" = '2016-12-07 01:12:22.634000' WHERE "auth_user"."id" = 2; args=(u'2016-12-07 01:12:22.634000', 2)
+DEBUG 2016-12-07 09:12:22,746 utils 20608 4496 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:12:22,753 utils 20608 4496 (0.006) UPDATE "django_session" SET "session_data" = 'YWI2ZTBiMmEyMzI2ZjVhZTY5ZmQ0NGFlNjMzMDQyNTE1N2Y0NTg3Nzp7Il9hdXRoX3VzZXJfaGFzaCI6IjU1M2RhN2ZjNzRmOGM2NDAyZTcwMmY4ZjVjZmM1NzM4NzdiYzEwNWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', "expire_date" = '2016-12-21 01:12:22.746000' WHERE "django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu'; args=(u'YWI2ZTBiMmEyMzI2ZjVhZTY5ZmQ0NGFlNjMzMDQyNTE1N2Y0NTg3Nzp7Il9hdXRoX3VzZXJfaGFzaCI6IjU1M2RhN2ZjNzRmOGM2NDAyZTcwMmY4ZjVjZmM1NzM4NzdiYzEwNWEiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIn0=', u'2016-12-21 01:12:22.746000', u'zv5vyyawmmsbwk4r756ni93dyoneuydu')
+INFO 2016-12-07 09:12:22,861 basehttp 20608 4496 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+DEBUG 2016-12-07 09:12:22,875 utils 20608 22940 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:12:22.869000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:12:22.869000')
+DEBUG 2016-12-07 09:12:22,878 utils 20608 22940 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:12:22,907 base 20608 22940 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033D39B0>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0343DCB0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03443190>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x034430D0>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03443310>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x034431D0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x03443730>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03443330>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x03443670>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:12:22,907 base 20608 22940 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033D39B0>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0343DCB0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03443190>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x034430D0>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03443310>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x034431D0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x03443730>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x03443330>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x03443670>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:12:22,913 utils 20608 22940 (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 2 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(2,)
+INFO 2016-12-07 09:12:22,914 basehttp 20608 22940 "GET /admin/ HTTP/1.1" 200 3440
+DEBUG 2016-12-07 09:12:32,835 utils 20608 22044 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:12:32.826000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:12:32.826000')
+DEBUG 2016-12-07 09:12:32,838 utils 20608 22044 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:12:32,838 utils 20608 22044 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:12:32,838 utils 20608 22044 (0.000) SAVEPOINT "s22044_x1"; args=None
+DEBUG 2016-12-07 09:12:32,842 utils 20608 22044 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'user' AND "django_content_type"."app_label" = 'auth'); args=('user', 'auth')
+DEBUG 2016-12-07 09:12:32,842 utils 20608 22044 (0.000) RELEASE SAVEPOINT "s22044_x1"; args=None
+INFO 2016-12-07 09:12:32,878 basehttp 20608 22044 "GET /admin/auth/user/add/ HTTP/1.1" 200 5164
+DEBUG 2016-12-07 09:12:33,042 utils 20608 19128 (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:12:33.035000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:12:33.035000')
+DEBUG 2016-12-07 09:12:33,043 utils 20608 19128 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:12:33,048 basehttp 20608 19128 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+DEBUG 2016-12-07 09:12:47,454 utils 20608 21812 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:12:47.448000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:12:47.448000')
+DEBUG 2016-12-07 09:12:47,456 utils 20608 21812 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:12:47,457 utils 20608 21812 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:12:47,457 utils 20608 21812 (0.000) SAVEPOINT "s21812_x1"; args=None
+DEBUG 2016-12-07 09:12:47,463 utils 20608 21812 (0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'zhangsan' LIMIT 1; args=(u'zhangsan',)
+DEBUG 2016-12-07 09:12:47,522 utils 20608 21812 (0.006) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$30000$ElCdHsz66iZY$xYC/8YVoQpYS9gTunJMCc4FTCEHWDBjGeqsAYoSl/y4=', NULL, 0, 'zhangsan', '', '', '', 0, 1, '2016-12-07 01:12:47.459000'); args=[u'pbkdf2_sha256$30000$ElCdHsz66iZY$xYC/8YVoQpYS9gTunJMCc4FTCEHWDBjGeqsAYoSl/y4=', None, False, u'zhangsan', u'', u'', u'', False, True, u'2016-12-07 01:12:47.459000']
+DEBUG 2016-12-07 09:12:47,523 utils 20608 21812 (0.000) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2016-12-07 01:12:47.522000', 2, 3, '3', 'zhangsan', 1, '[{"added": {}}]'); args=[u'2016-12-07 01:12:47.522000', 2, 3, u'3', u'zhangsan', 1, '[{"added": {}}]']
+DEBUG 2016-12-07 09:12:47,523 utils 20608 21812 (0.000) RELEASE SAVEPOINT "s21812_x1"; args=None
+INFO 2016-12-07 09:12:47,661 basehttp 20608 21812 "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+DEBUG 2016-12-07 09:12:47,671 utils 20608 21524 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:12:47.666000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:12:47.666000')
+DEBUG 2016-12-07 09:12:47,671 utils 20608 21524 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:12:47,671 utils 20608 21524 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:12:47,673 utils 20608 21524 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3; args=(3,)
+DEBUG 2016-12-07 09:12:47,717 utils 20608 21524 (0.000) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" INNER JOIN "auth_user_groups" ON ("auth_group"."id" = "auth_user_groups"."group_id") WHERE "auth_user_groups"."user_id" = 3; args=(3,)
+DEBUG 2016-12-07 09:12:47,719 utils 20608 21524 (0.000) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" ORDER BY "auth_group"."name" ASC; args=()
+DEBUG 2016-12-07 09:12:47,720 base 20608 21524 Exception while resolving variable 'can_change_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [can_change_related] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'widget\': u\'<select multiple="multiple" class="selectfilter" data-field-name="groups" data-is-stacked="0" id="id_groups" name="groups">\\n</select>\', \'add_related_url\': u\'/admin/auth/group/add/\', u\'name\': \'groups\', \'can_add_related\': True, u\'model\': <django.utils.functional.__proxy__ object at 0x0315F5F0>, u\'url_params\': u\'_to_field=id&_popup=1\'}, {\'block\': <Block Node: links. Contents: [<TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n    \'>]>}]'
+DEBUG 2016-12-07 09:12:47,721 base 20608 21524 Exception while resolving variable 'can_delete_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [can_delete_related] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'widget\': u\'<select multiple="multiple" class="selectfilter" data-field-name="groups" data-is-stacked="0" id="id_groups" name="groups">\\n</select>\', \'add_related_url\': u\'/admin/auth/group/add/\', u\'name\': \'groups\', \'can_add_related\': True, u\'model\': <django.utils.functional.__proxy__ object at 0x0315F5F0>, u\'url_params\': u\'_to_field=id&_popup=1\'}, {\'block\': <Block Node: links. Contents: [<TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n    \'>]>}]'
+DEBUG 2016-12-07 09:12:47,724 utils 20608 21524 (0.000) SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_user_user_permissions" ON ("auth_permission"."id" = "auth_user_user_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_user_user_permissions"."user_id" = 3 ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(3,)
+DEBUG 2016-12-07 09:12:47,726 utils 20608 21524 (0.000) SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=()
+DEBUG 2016-12-07 09:12:47,730 base 20608 21524 Exception while resolving variable 'can_change_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [can_change_related] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'model\': <django.utils.functional.__proxy__ object at 0x0315F110>, u\'widget\': u\'<select multiple="multiple" class="selectfilter" data-field-name="user permissions" data-is-stacked="0" id="id_user_permissions" name="user_permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="10">auth | group | Can add group</option>\\n<option value="11">auth | group | Can change group</option>\\n<option value="12">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="7">auth | user | Can add user</option>\\n<option value="8">auth | user | Can change user</option>\\n<option value="9">auth | user | Can delete user</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="19">default | todolist | Can add todolist</option>\\n<option value="20">default | todolist | Can change todolist</option>\\n<option value="21">default | todolist | Can delete todolist</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select>\', u\'name\': \'user_permissions\', u\'url_params\': u\'_to_field=id&_popup=1\'}, {\'block\': <Block Node: links. Contents: [<TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n    \'>]>}]'
+DEBUG 2016-12-07 09:12:47,732 base 20608 21524 Exception while resolving variable 'can_add_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [can_add_related] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'model\': <django.utils.functional.__proxy__ object at 0x0315F110>, u\'widget\': u\'<select multiple="multiple" class="selectfilter" data-field-name="user permissions" data-is-stacked="0" id="id_user_permissions" name="user_permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="10">auth | group | Can add group</option>\\n<option value="11">auth | group | Can change group</option>\\n<option value="12">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="7">auth | user | Can add user</option>\\n<option value="8">auth | user | Can change user</option>\\n<option value="9">auth | user | Can delete user</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="19">default | todolist | Can add todolist</option>\\n<option value="20">default | todolist | Can change todolist</option>\\n<option value="21">default | todolist | Can delete todolist</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select>\', u\'name\': \'user_permissions\', u\'url_params\': u\'_to_field=id&_popup=1\'}, {\'block\': <Block Node: links. Contents: [<TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n    \'>]>}]'
+DEBUG 2016-12-07 09:12:47,732 base 20608 21524 Exception while resolving variable 'can_delete_related' in template 'admin/related_widget_wrapper.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [can_delete_related] in u'[{\'False\': False, \'None\': None, \'True\': True}, {u\'model\': <django.utils.functional.__proxy__ object at 0x0315F110>, u\'widget\': u\'<select multiple="multiple" class="selectfilter" data-field-name="user permissions" data-is-stacked="0" id="id_user_permissions" name="user_permissions">\\n<option value="1">admin | log entry | Can add log entry</option>\\n<option value="2">admin | log entry | Can change log entry</option>\\n<option value="3">admin | log entry | Can delete log entry</option>\\n<option value="10">auth | group | Can add group</option>\\n<option value="11">auth | group | Can change group</option>\\n<option value="12">auth | group | Can delete group</option>\\n<option value="4">auth | permission | Can add permission</option>\\n<option value="5">auth | permission | Can change permission</option>\\n<option value="6">auth | permission | Can delete permission</option>\\n<option value="7">auth | user | Can add user</option>\\n<option value="8">auth | user | Can change user</option>\\n<option value="9">auth | user | Can delete user</option>\\n<option value="13">contenttypes | content type | Can add content type</option>\\n<option value="14">contenttypes | content type | Can change content type</option>\\n<option value="15">contenttypes | content type | Can delete content type</option>\\n<option value="19">default | todolist | Can add todolist</option>\\n<option value="20">default | todolist | Can change todolist</option>\\n<option value="21">default | todolist | Can delete todolist</option>\\n<option value="16">sessions | session | Can add session</option>\\n<option value="17">sessions | session | Can change session</option>\\n<option value="18">sessions | session | Can delete session</option>\\n</select>\', u\'name\': \'user_permissions\', u\'url_params\': u\'_to_field=id&_popup=1\'}, {\'block\': <Block Node: links. Contents: [<TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n        \'>, <IfNode>, <TextNode: u\'\\n    \'>]>}]'
+INFO 2016-12-07 09:12:47,743 basehttp 20608 21524 "GET /admin/auth/user/3/change/ HTTP/1.1" 200 13743
+DEBUG 2016-12-07 09:12:47,947 utils 20608 23280 (0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:12:47.916000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:12:47.916000')
+DEBUG 2016-12-07 09:12:47,977 utils 20608 23280 (0.010) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:12:47,996 basehttp 20608 23280 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+INFO 2016-12-07 09:12:48,977 basehttp 20608 22008 "GET /static/admin/js/calendar.js HTTP/1.1" 200 7790
+INFO 2016-12-07 09:12:48,979 basehttp 20608 21552 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20529
+INFO 2016-12-07 09:12:49,296 basehttp 20608 22016 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2016-12-07 09:12:49,305 basehttp 20608 21424 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+DEBUG 2016-12-07 09:13:09,489 utils 20608 9868 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:13:09.484000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:13:09.484000')
+DEBUG 2016-12-07 09:13:09,490 utils 20608 9868 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:13:09,506 base 20608 9868 Exception while resolving variable 'is_popup' in template 'admin/app_index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033277F0>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x04C02770>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033F1070>, u'request': <WSGIRequest: GET '/admin/auth/'>}, {}, {'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04C02110>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04C02930>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04C02410>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04C028D0>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04C02D50>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}], 'title': u'Authentication and Authorization administration', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, u'LANGUAGE_CODE': 'en-us', 'site_url': '/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'app_label': u'auth', 'has_permission': True, u'LANGUAGE_BIDI': False}]"
+DEBUG 2016-12-07 09:13:09,507 base 20608 9868 Exception while resolving variable 'is_popup' in template 'admin/app_index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033277F0>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x04C02770>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x033F1070>, u'request': <WSGIRequest: GET '/admin/auth/'>}, {}, {'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04C02110>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04C02930>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04C02410>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04C028D0>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04C02D50>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}], 'title': u'Authentication and Authorization administration', 'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, u'LANGUAGE_CODE': 'en-us', 'site_url': '/', 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'app_label': u'auth', 'has_permission': True, u'LANGUAGE_BIDI': False}]"
+INFO 2016-12-07 09:13:09,513 basehttp 20608 9868 "GET /admin/auth/ HTTP/1.1" 200 2707
+DEBUG 2016-12-07 09:13:27,967 utils 20608 20656 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:13:27.963000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:13:27.963000')
+DEBUG 2016-12-07 09:13:27,967 utils 20608 20656 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:13:27,980 base 20608 20656 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033D3530>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033DE4D0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03324B70>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04B8B1F0>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04B8B210>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04B8B2F0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04B8B250>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04B8B1B0>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04B8B2D0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:13:27,980 base 20608 20656 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x033D3530>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033DE4D0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x03324B70>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04B8B1F0>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04B8B210>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04B8B2F0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04B8B250>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04B8B1B0>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04B8B2D0>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:13:27,987 utils 20608 20656 (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 2 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(2,)
+INFO 2016-12-07 09:13:27,990 basehttp 20608 20656 "GET /admin/ HTTP/1.1" 200 3754
+INFO 2016-12-07 09:14:45,302 views 20608 22744 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:14:45,309 utils 20608 22744 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:14:45,312 basehttp 20608 22744 "GET / HTTP/1.1" 200 2123
+DEBUG 2016-12-07 09:14:53,349 utils 20608 12880 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:14:53.344000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:14:53.344000')
+DEBUG 2016-12-07 09:14:53,351 utils 20608 12880 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:14:53,352 utils 20608 12880 (0.000) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:14:53,354 utils 20608 12880 (0.000) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:14:53,355 utils 20608 12880 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" ORDER BY "default_todolist"."id" DESC; args=()
+DEBUG 2016-12-07 09:14:53,441 base 20608 12880 Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+DEBUG 2016-12-07 09:14:53,447 base 20608 12880 Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x04BE38B0>>}]"
+DEBUG 2016-12-07 09:14:53,447 base 20608 12880 Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+DEBUG 2016-12-07 09:14:53,456 base 20608 12880 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+DEBUG 2016-12-07 09:14:53,456 base 20608 12880 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+INFO 2016-12-07 09:14:53,460 basehttp 20608 12880 "GET /admin/default/todolist/ HTTP/1.1" 200 4446
+DEBUG 2016-12-07 09:14:53,641 utils 20608 15840 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:14:53.622000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:14:53.622000')
+DEBUG 2016-12-07 09:14:53,644 utils 20608 15840 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:14:53,650 basehttp 20608 15840 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+DEBUG 2016-12-07 09:14:59,644 utils 20608 22300 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:14:59.638000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:14:59.638000')
+DEBUG 2016-12-07 09:14:59,647 utils 20608 22300 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:14:59,648 utils 20608 22300 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:14:59,648 utils 20608 22300 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:14:59,654 utils 20608 22300 (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."model" = 'todolist' AND "django_content_type"."app_label" = 'default'); args=('todolist', 'default')
+INFO 2016-12-07 09:14:59,713 basehttp 20608 22300 "GET /admin/default/todolist/2/change/ HTTP/1.1" 200 4095
+DEBUG 2016-12-07 09:14:59,898 utils 20608 22032 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:14:59.894000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:14:59.894000')
+DEBUG 2016-12-07 09:14:59,901 utils 20608 22032 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:14:59,905 basehttp 20608 22032 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+DEBUG 2016-12-07 09:15:04,270 utils 20608 22684 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:04.264000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:04.264000')
+DEBUG 2016-12-07 09:15:04,273 utils 20608 22684 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:15:04,273 utils 20608 22684 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:15:04,273 utils 20608 22684 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 2; args=(2,)
+INFO 2016-12-07 09:15:04,336 basehttp 20608 22684 "GET /admin/default/todolist/2/delete/ HTTP/1.1" 200 3044
+INFO 2016-12-07 09:15:04,437 basehttp 20608 22944 "GET /static/admin/js/cancel.js HTTP/1.1" 200 204
+DEBUG 2016-12-07 09:15:08,138 utils 20608 2812 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:08.129000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:08.129000')
+DEBUG 2016-12-07 09:15:08,142 utils 20608 2812 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:15:08,142 utils 20608 2812 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:15:08,145 utils 20608 2812 (0.002) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:15:08,151 utils 20608 2812 (0.003) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2016-12-07 01:15:08.147000', 2, 7, '2', 'Todolist object', 3, ''); args=[u'2016-12-07 01:15:08.147000', 2, 7, u'2', u'Todolist object', 3, u'']
+DEBUG 2016-12-07 09:15:08,151 utils 20608 2812 (0.000) DELETE FROM "default_todolist" WHERE "default_todolist"."id" IN (2); args=(2,)
+INFO 2016-12-07 09:15:08,289 basehttp 20608 2812 "POST /admin/default/todolist/2/delete/ HTTP/1.1" 302 0
+DEBUG 2016-12-07 09:15:08,302 utils 20608 22136 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:08.299000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:08.299000')
+DEBUG 2016-12-07 09:15:08,303 utils 20608 22136 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:15:08,305 utils 20608 22136 (0.000) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:15:08,305 utils 20608 22136 (0.000) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:15:08,309 utils 20608 22136 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" ORDER BY "default_todolist"."id" DESC; args=()
+DEBUG 2016-12-07 09:15:08,329 base 20608 22136 Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+DEBUG 2016-12-07 09:15:08,332 base 20608 22136 Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x0344BBF0>>}]"
+DEBUG 2016-12-07 09:15:08,334 base 20608 22136 Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+DEBUG 2016-12-07 09:15:08,339 base 20608 22136 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+INFO 2016-12-07 09:15:08,345 basehttp 20608 22136 "GET /admin/default/todolist/ HTTP/1.1" 200 4370
+DEBUG 2016-12-07 09:15:08,476 utils 20608 22168 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:08.472000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:08.472000')
+DEBUG 2016-12-07 09:15:08,482 utils 20608 22168 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:15:08,486 basehttp 20608 22168 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+INFO 2016-12-07 09:15:12,803 views 20608 23236 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:15:12,811 utils 20608 23236 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:15:12,812 basehttp 20608 23236 "GET / HTTP/1.1" 200 1682
+DEBUG 2016-12-07 09:15:49,019 utils 20608 15276 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:49.015000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:49.015000')
+DEBUG 2016-12-07 09:15:49,022 utils 20608 15276 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:15:49,023 utils 20608 15276 (0.000) BEGIN; args=None
+INFO 2016-12-07 09:15:49,056 basehttp 20608 15276 "GET /admin/default/todolist/add/ HTTP/1.1" 200 3851
+DEBUG 2016-12-07 09:15:49,282 utils 20608 22180 (0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:49.260000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:49.260000')
+DEBUG 2016-12-07 09:15:49,289 utils 20608 22180 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:15:49,293 basehttp 20608 22180 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+DEBUG 2016-12-07 09:15:56,368 utils 20608 22444 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:56.365000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:56.365000')
+DEBUG 2016-12-07 09:15:56,371 utils 20608 22444 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:15:56,371 utils 20608 22444 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:15:56,380 utils 20608 22444 (0.003) INSERT INTO "default_todolist" ("content") VALUES ('cccccccccccc'); args=[u'cccccccccccc']
+DEBUG 2016-12-07 09:15:56,381 utils 20608 22444 (0.000) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2016-12-07 01:15:56.381000', 2, 7, '3', 'Todolist object', 1, '[{"added": {}}]'); args=[u'2016-12-07 01:15:56.381000', 2, 7, u'3', u'Todolist object', 1, '[{"added": {}}]']
+INFO 2016-12-07 09:15:56,532 basehttp 20608 22444 "POST /admin/default/todolist/add/ HTTP/1.1" 302 0
+DEBUG 2016-12-07 09:15:56,559 utils 20608 23116 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:56.547000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:56.547000')
+DEBUG 2016-12-07 09:15:56,563 utils 20608 23116 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:15:56,565 utils 20608 23116 (0.000) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:15:56,566 utils 20608 23116 (0.000) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:15:56,571 utils 20608 23116 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" ORDER BY "default_todolist"."id" DESC; args=()
+DEBUG 2016-12-07 09:15:56,604 base 20608 23116 Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+DEBUG 2016-12-07 09:15:56,609 base 20608 23116 Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x033277B0>>}]"
+DEBUG 2016-12-07 09:15:56,609 base 20608 23116 Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+DEBUG 2016-12-07 09:15:56,617 base 20608 23116 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+DEBUG 2016-12-07 09:15:56,618 base 20608 23116 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+INFO 2016-12-07 09:15:56,621 basehttp 20608 23116 "GET /admin/default/todolist/ HTTP/1.1" 200 4640
+DEBUG 2016-12-07 09:15:56,780 utils 20608 19952 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:15:56.772000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:15:56.772000')
+DEBUG 2016-12-07 09:15:56,782 utils 20608 19952 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:15:56,786 basehttp 20608 19952 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+INFO 2016-12-07 09:15:59,631 views 20608 8580 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:15:59,638 utils 20608 8580 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:15:59,638 basehttp 20608 8580 "GET / HTTP/1.1" 200 2132
+DEBUG 2016-12-07 09:21:02,591 utils 20608 18068 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:21:02.585000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:21:02.585000')
+DEBUG 2016-12-07 09:21:02,592 utils 20608 18068 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:21:02,598 utils 20608 18068 (0.001) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:21:02,598 utils 20608 18068 (0.000) SELECT COUNT(*) AS "__count" FROM "default_todolist"; args=()
+DEBUG 2016-12-07 09:21:02,601 utils 20608 18068 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" ORDER BY "default_todolist"."id" DESC; args=()
+DEBUG 2016-12-07 09:21:02,644 base 20608 18068 Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+DEBUG 2016-12-07 09:21:02,654 base 20608 18068 Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x0344BDF0>>}]"
+DEBUG 2016-12-07 09:21:02,654 base 20608 18068 Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+DEBUG 2016-12-07 09:21:02,677 base 20608 18068 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+DEBUG 2016-12-07 09:21:02,677 base 20608 18068 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+INFO 2016-12-07 09:21:02,686 basehttp 20608 18068 "GET /admin/default/todolist/ HTTP/1.1" 200 4446
+INFO 2016-12-07 09:21:02,915 basehttp 20608 18840 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:02,948 basehttp 20608 19552 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:02,959 basehttp 20608 23380 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:02,980 basehttp 20608 21560 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:02,990 basehttp 20608 20636 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:02,996 basehttp 20608 21980 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+DEBUG 2016-12-07 09:21:03,009 utils 20608 22412 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:21:02.972000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:21:02.972000')
+DEBUG 2016-12-07 09:21:03,012 utils 20608 22412 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:21:03,017 basehttp 20608 22412 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+INFO 2016-12-07 09:21:03,033 basehttp 20608 23344 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,036 basehttp 20608 14624 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,040 basehttp 20608 22476 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,046 basehttp 20608 22916 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,051 basehttp 20608 21916 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,144 basehttp 20608 22372 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,201 basehttp 20608 21844 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,207 basehttp 20608 23080 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2016-12-07 09:21:03,219 basehttp 20608 20232 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+DEBUG 2016-12-07 09:37:24,621 utils 20608 9688 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:37:24.616000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:37:24.616000')
+DEBUG 2016-12-07 09:37:24,621 utils 20608 9688 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:37:24,635 base 20608 9688 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0344BA70>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033242B0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04BFD570>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04BFDB30>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04BFD310>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04BFD730>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04BFDE10>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04BFDD70>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04BFDB70>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:37:24,637 base 20608 9688 Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_popup] in u"[{'False': False, 'None': None, 'True': True}, {u'csrf_token': <SimpleLazyObject: <function _get_val at 0x0344BA70>>, 'user': <SimpleLazyObject: <User: wzl>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x033242B0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04BFD570>, u'request': <WSGIRequest: GET '/admin/'>}, {}, {'site_header': <django.utils.functional.__proxy__ object at 0x03094690>, 'available_apps': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04BFDB30>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04BFD310>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04BFD730>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], 'site_title': <django.utils.functional.__proxy__ object at 0x03094670>, 'title': <django.utils.functional.__proxy__ object at 0x030946B0>, 'has_permission': True, 'app_list': [{'app_url': u'/admin/auth/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/group/', 'object_name': 'Group', 'name': <django.utils.functional.__proxy__ object at 0x04BFDE10>, 'add_url': u'/admin/auth/group/add/'}, {'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/auth/user/', 'object_name': 'User', 'name': <django.utils.functional.__proxy__ object at 0x04BFDD70>, 'add_url': u'/admin/auth/user/add/'}], 'has_module_perms': True, 'name': <django.utils.functional.__proxy__ object at 0x03094F70>, 'app_label': 'auth'}, {'app_url': u'/admin/default/', 'models': [{'perms': {u'add': True, u'change': True, u'delete': True}, 'admin_url': u'/admin/default/todolist/', 'object_name': 'Todolist', 'name': <django.utils.functional.__proxy__ object at 0x04BFDB70>, 'add_url': u'/admin/default/todolist/add/'}], 'has_module_perms': True, 'name': 'Default', 'app_label': 'default'}], u'LANGUAGE_CODE': 'en-us', u'LANGUAGE_BIDI': False, 'site_url': '/'}]"
+DEBUG 2016-12-07 09:37:24,641 utils 20608 9688 (0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 2 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(2,)
+INFO 2016-12-07 09:37:24,644 basehttp 20608 9688 "GET /admin/ HTTP/1.1" 200 4307
+INFO 2016-12-07 09:37:24,841 basehttp 20608 8168 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+DEBUG 2016-12-07 09:37:26,434 utils 20608 19100 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:37:26.428000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:37:26.428000')
+DEBUG 2016-12-07 09:37:26,436 utils 20608 19100 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:37:26,438 utils 20608 19100 (0.000) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group"; args=()
+DEBUG 2016-12-07 09:37:26,440 utils 20608 19100 (0.001) SELECT COUNT(*) FROM (SELECT DISTINCT "auth_user"."id" AS Col1, "auth_user"."password" AS Col2, "auth_user"."last_login" AS Col3, "auth_user"."is_superuser" AS Col4, "auth_user"."username" AS Col5, "auth_user"."first_name" AS Col6, "auth_user"."last_name" AS Col7, "auth_user"."email" AS Col8, "auth_user"."is_staff" AS Col9, "auth_user"."is_active" AS Col10, "auth_user"."date_joined" AS Col11 FROM "auth_user") subquery; args=()
+DEBUG 2016-12-07 09:37:26,440 utils 20608 19100 (0.000) SELECT COUNT(*) AS "__count" FROM "auth_user"; args=()
+DEBUG 2016-12-07 09:37:26,444 utils 20608 19100 (0.001) SELECT DISTINCT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC, "auth_user"."id" DESC; args=()
+DEBUG 2016-12-07 09:37:26,461 base 20608 19100 Exception while resolving variable 'errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [errors] in u'None'
+DEBUG 2016-12-07 09:37:26,464 base 20608 19100 Exception while resolving variable 'show' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [show] in u"[{'False': False, 'None': None, 'True': True, 'csrf_token': <SimpleLazyObject: <function _get_val at 0x033D3670>>}]"
+DEBUG 2016-12-07 09:37:26,473 base 20608 19100 Exception while resolving variable 'is_multipart' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [is_multipart] in u'None'
+DEBUG 2016-12-07 09:37:26,486 base 20608 19100 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+DEBUG 2016-12-07 09:37:26,487 base 20608 19100 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+DEBUG 2016-12-07 09:37:26,489 base 20608 19100 Exception while resolving variable 'non_field_errors' in template 'admin/change_list.html'.
+Traceback (most recent call last):
+  File "E:\venv\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [non_field_errors] in u'None'
+INFO 2016-12-07 09:37:26,492 basehttp 20608 19100 "GET /admin/auth/user/ HTTP/1.1" 200 7189
+DEBUG 2016-12-07 09:37:26,691 utils 20608 19528 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:37:26.662000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:37:26.662000')
+DEBUG 2016-12-07 09:37:26,694 utils 20608 19528 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:37:26,703 basehttp 20608 19528 "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+INFO 2016-12-07 09:37:26,726 basehttp 20608 23532 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2016-12-07 09:37:26,858 basehttp 20608 23548 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+DEBUG 2016-12-07 09:41:50,743 utils 20608 21808 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:41:50.735000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:41:50.735000')
+DEBUG 2016-12-07 09:41:50,744 utils 20608 21808 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+INFO 2016-12-07 09:41:50,765 basehttp 20608 21808 "GET /add/ HTTP/1.1" 200 1102
+DEBUG 2016-12-07 09:42:00,062 utils 20608 18648 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu' AND "django_session"."expire_date" > '2016-12-07 01:42:00.056000'); args=('zv5vyyawmmsbwk4r756ni93dyoneuydu', u'2016-12-07 01:42:00.056000')
+DEBUG 2016-12-07 09:42:00,065 utils 20608 18648 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2; args=(2,)
+DEBUG 2016-12-07 09:42:00,066 utils 20608 18648 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'zv5vyyawmmsbwk4r756ni93dyoneuydu'; args=('zv5vyyawmmsbwk4r756ni93dyoneuydu',)
+DEBUG 2016-12-07 09:42:00,068 utils 20608 18648 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:42:00,072 utils 20608 18648 (0.005) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('zv5vyyawmmsbwk4r756ni93dyoneuydu'); args=(u'zv5vyyawmmsbwk4r756ni93dyoneuydu',)
+INFO 2016-12-07 09:42:00,430 basehttp 20608 18648 "GET /logout/ HTTP/1.1" 302 0
+INFO 2016-12-07 09:42:00,434 views 20608 20680 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:42:00,437 utils 20608 20680 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:42:00,440 basehttp 20608 20680 "GET / HTTP/1.1" 200 2132
+INFO 2016-12-07 09:42:02,890 basehttp 20608 20104 "GET /add/ HTTP/1.1" 302 0
+INFO 2016-12-07 09:42:03,154 basehttp 20608 21696 "GET /login/?next=/add/ HTTP/1.1" 200 2728
+INFO 2016-12-07 09:42:19,414 basehttp 20608 22460 "GET /add/ HTTP/1.1" 302 0
+INFO 2016-12-07 09:42:19,427 basehttp 20608 21952 "GET /login/?next=/add/ HTTP/1.1" 200 2728
+INFO 2016-12-07 09:42:22,322 basehttp 20608 20904 "GET /update/?todoid=1 HTTP/1.1" 302 0
+INFO 2016-12-07 09:42:22,332 basehttp 20608 18836 "GET /login/?next=/update/%3Ftodoid%3D1 HTTP/1.1" 200 2728
+INFO 2016-12-07 09:42:25,578 basehttp 20608 22944 "GET /del/?todoid=1 HTTP/1.1" 302 0
+INFO 2016-12-07 09:42:25,595 basehttp 20608 21804 "GET /login/?next=/del/%3Ftodoid%3D1 HTTP/1.1" 200 2728
+INFO 2016-12-07 09:42:30,753 basehttp 20608 20692 "GET /login/ HTTP/1.1" 200 2728
+DEBUG 2016-12-07 09:42:39,730 utils 20608 16676 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=(u'admin',)
+DEBUG 2016-12-07 09:42:39,786 utils 20608 16676 (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e' LIMIT 1; args=(u'my988w5b8xrr0p80bzo3e0rdb5en4t5e',)
+DEBUG 2016-12-07 09:42:39,786 utils 20608 16676 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:42:39,793 utils 20608 16676 (0.007) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'my988w5b8xrr0p80bzo3e0rdb5en4t5e', 'Y2QxNTM5ZDY1YTFlM2EyNTYxYTQ2ZjhkN2M2MmNjN2YyY2Q4NWQwMjp7fQ==', '2016-12-21 01:42:39.787000'; args=(u'my988w5b8xrr0p80bzo3e0rdb5en4t5e', u'Y2QxNTM5ZDY1YTFlM2EyNTYxYTQ2ZjhkN2M2MmNjN2YyY2Q4NWQwMjp7fQ==', u'2016-12-21 01:42:39.787000')
+DEBUG 2016-12-07 09:42:39,921 utils 20608 16676 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:42:39,930 utils 20608 16676 (0.008) UPDATE "auth_user" SET "last_login" = '2016-12-07 01:42:39.921000' WHERE "auth_user"."id" = 1; args=(u'2016-12-07 01:42:39.921000', 1)
+DEBUG 2016-12-07 09:42:40,043 utils 20608 16676 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:42:40,055 utils 20608 16676 (0.008) UPDATE "django_session" SET "session_data" = 'OWYwNDQ1YzE4MjIzZWYwZjM4MjcxOWJhYmQ2YTkxMjhmZmRmNTQ1Mzp7Il9hdXRoX3VzZXJfaGFzaCI6IjZjODU5YTgxMGM0MzJlYTgxNGY3Mjg1NmZmNDJmYWExNWU5YzJhYzYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', "expire_date" = '2016-12-21 01:42:40.044000' WHERE "django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e'; args=(u'OWYwNDQ1YzE4MjIzZWYwZjM4MjcxOWJhYmQ2YTkxMjhmZmRmNTQ1Mzp7Il9hdXRoX3VzZXJfaGFzaCI6IjZjODU5YTgxMGM0MzJlYTgxNGY3Mjg1NmZmNDJmYWExNWU5YzJhYzYiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIxIn0=', u'2016-12-21 01:42:40.044000', u'my988w5b8xrr0p80bzo3e0rdb5en4t5e')
+INFO 2016-12-07 09:42:40,165 basehttp 20608 16676 "POST /login/ HTTP/1.1" 302 0
+INFO 2016-12-07 09:42:40,173 views 20608 18416 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:42:40,180 utils 20608 18416 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:42:40,181 basehttp 20608 18416 "GET / HTTP/1.1" 200 2132
+DEBUG 2016-12-07 09:42:51,798 utils 20608 8072 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e' AND "django_session"."expire_date" > '2016-12-07 01:42:51.789000'); args=('my988w5b8xrr0p80bzo3e0rdb5en4t5e', u'2016-12-07 01:42:51.789000')
+DEBUG 2016-12-07 09:42:51,799 utils 20608 8072 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+INFO 2016-12-07 09:42:51,802 basehttp 20608 8072 "GET /add/ HTTP/1.1" 200 1102
+DEBUG 2016-12-07 09:42:56,513 utils 20608 20440 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e' AND "django_session"."expire_date" > '2016-12-07 01:42:56.508000'); args=('my988w5b8xrr0p80bzo3e0rdb5en4t5e', u'2016-12-07 01:42:56.508000')
+DEBUG 2016-12-07 09:42:56,513 utils 20608 20440 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+DEBUG 2016-12-07 09:42:56,513 utils 20608 20440 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:42:56,517 utils 20608 20440 (0.004) INSERT INTO "default_todolist" ("content") VALUES ('aaaa'); args=[u'aaaa']
+DEBUG 2016-12-07 09:42:56,634 utils 20608 20440 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:42:56,635 basehttp 20608 20440 "POST /add/ HTTP/1.1" 200 2574
+INFO 2016-12-07 09:43:09,763 basehttp 20608 22772 "GET /login/ HTTP/1.1" 200 2728
+DEBUG 2016-12-07 09:47:13,947 utils 18844 22344 (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-07 09:47:13,950 utils 18844 22344 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-07 09:47:15,078 basehttp 18844 21944 "GET /login/ HTTP/1.1" 200 2728
+DEBUG 2016-12-07 09:47:24,846 utils 18844 22460 (0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=(u'admin',)
+DEBUG 2016-12-07 09:47:24,897 utils 18844 22460 (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e' AND "django_session"."expire_date" > '2016-12-07 01:47:24.896000'); args=('my988w5b8xrr0p80bzo3e0rdb5en4t5e', u'2016-12-07 01:47:24.896000')
+DEBUG 2016-12-07 09:47:24,898 utils 18844 22460 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:47:24,907 utils 18844 22460 (0.006) UPDATE "auth_user" SET "last_login" = '2016-12-07 01:47:24.899000' WHERE "auth_user"."id" = 1; args=(u'2016-12-07 01:47:24.899000', 1)
+DEBUG 2016-12-07 09:47:25,049 utils 18844 22460 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:47:25,056 utils 18844 22460 (0.006) UPDATE "django_session" SET "session_data" = 'ZjI4OGZlMGMyNzcxMTc3NGMyNGZiZjYzNTU3ZjhiODYwY2M2MzVmYzp7Il9hdXRoX3VzZXJfaGFzaCI6IjZjODU5YTgxMGM0MzJlYTgxNGY3Mjg1NmZmNDJmYWExNWU5YzJhYzYiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', "expire_date" = '2016-12-21 01:47:25.049000' WHERE "django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e'; args=(u'ZjI4OGZlMGMyNzcxMTc3NGMyNGZiZjYzNTU3ZjhiODYwY2M2MzVmYzp7Il9hdXRoX3VzZXJfaGFzaCI6IjZjODU5YTgxMGM0MzJlYTgxNGY3Mjg1NmZmNDJmYWExNWU5YzJhYzYiLCJfYXV0aF91c2VyX2lkIjoiMSIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', u'2016-12-21 01:47:25.049000', 'my988w5b8xrr0p80bzo3e0rdb5en4t5e')
+INFO 2016-12-07 09:47:25,174 basehttp 18844 22460 "POST /login/ HTTP/1.1" 302 0
+INFO 2016-12-07 09:47:25,180 views 18844 19272 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:47:25,190 utils 18844 19272 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:47:25,194 basehttp 18844 19272 "GET / HTTP/1.1" 200 2574
+DEBUG 2016-12-07 09:48:22,562 utils 18844 12020 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e' AND "django_session"."expire_date" > '2016-12-07 01:48:22.555000'); args=('my988w5b8xrr0p80bzo3e0rdb5en4t5e', u'2016-12-07 01:48:22.555000')
+DEBUG 2016-12-07 09:48:22,565 utils 18844 12020 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+DEBUG 2016-12-07 09:48:22,566 utils 18844 12020 (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'my988w5b8xrr0p80bzo3e0rdb5en4t5e'; args=('my988w5b8xrr0p80bzo3e0rdb5en4t5e',)
+DEBUG 2016-12-07 09:48:22,566 utils 18844 12020 (0.000) BEGIN; args=None
+DEBUG 2016-12-07 09:48:22,569 utils 18844 12020 (0.003) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('my988w5b8xrr0p80bzo3e0rdb5en4t5e'); args=(u'my988w5b8xrr0p80bzo3e0rdb5en4t5e',)
+INFO 2016-12-07 09:48:22,723 basehttp 18844 12020 "GET /logout/ HTTP/1.1" 302 0
+INFO 2016-12-07 09:48:22,729 views 18844 980 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 09:48:22,734 utils 18844 980 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 09:48:22,736 basehttp 18844 980 "GET / HTTP/1.1" 200 2574
+INFO 2016-12-07 09:48:50,028 basehttp 18844 22064 "GET /add/ HTTP/1.1" 302 0
+INFO 2016-12-07 09:48:50,036 basehttp 18844 8168 "GET /login/?next=/add/ HTTP/1.1" 200 2728
+INFO 2016-12-07 09:48:58,096 basehttp 18844 23364 "GET /update/?todoid=1 HTTP/1.1" 302 0
+INFO 2016-12-07 09:48:58,118 basehttp 18844 20796 "GET /login/?next=/update/%3Ftodoid%3D1 HTTP/1.1" 200 2728
+INFO 2016-12-07 09:49:01,579 basehttp 18844 12132 "GET /del/?todoid=1 HTTP/1.1" 302 0
+INFO 2016-12-07 09:49:01,586 basehttp 18844 23340 "GET /login/?next=/del/%3Ftodoid%3D1 HTTP/1.1" 200 2728
+INFO 2016-12-07 10:44:52,308 views 18844 24292 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-07 10:44:52,354 utils 18844 24292 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-07 10:44:52,355 basehttp 18844 24292 "GET / HTTP/1.1" 200 2574
+DEBUG 2016-12-08 20:49:18,528 utils 7584 4632 (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-08 20:49:18,544 utils 7584 4632 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-08 20:49:23,616 views 7584 6672 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-08 20:49:23,644 utils 7584 6672 (0.002) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-08 20:49:23,680 basehttp 7584 6672 "GET / HTTP/1.1" 200 2574
+DEBUG 2016-12-08 20:49:24,098 base 7584 4680 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'path': 'favicon.ico', 'tried': [[<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^add/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^update/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^del/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^login/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^logout/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2016-12-08 20:49:24,115 base 7584 4680 Not Found: /favicon.ico
+WARNING 2016-12-08 20:49:24,116 basehttp 7584 4680 "GET /favicon.ico HTTP/1.1" 404 2867
+INFO 2016-12-08 20:49:28,457 basehttp 7584 4156 "GET /add/ HTTP/1.1" 302 0
+INFO 2016-12-08 20:49:28,477 basehttp 7584 7224 "GET /login/?next=/add/ HTTP/1.1" 200 2728
+DEBUG 2016-12-08 20:49:37,776 utils 7584 6384 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'wzl'; args=('wzl',)
+INFO 2016-12-08 20:49:37,824 basehttp 7584 6384 "POST /login/ HTTP/1.1" 302 0
+INFO 2016-12-08 20:49:37,828 views 7584 4156 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-08 20:49:37,833 utils 7584 4156 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-08 20:49:37,834 basehttp 7584 4156 "GET / HTTP/1.1" 200 2574
+INFO 2016-12-08 20:49:43,345 basehttp 7584 6384 "GET /update/?todoid=1 HTTP/1.1" 302 0
+INFO 2016-12-08 20:49:43,374 basehttp 7584 4156 "GET /login/?next=/update/%3Ftodoid%3D1 HTTP/1.1" 200 2728
+DEBUG 2016-12-08 20:49:50,096 utils 7584 3608 (0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'wzl'; args=('wzl',)
+INFO 2016-12-08 20:49:50,146 basehttp 7584 3608 "POST /login/ HTTP/1.1" 302 0
+INFO 2016-12-08 20:49:50,150 views 7584 5576 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-08 20:49:50,154 utils 7584 5576 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-08 20:49:50,154 basehttp 7584 5576 "GET / HTTP/1.1" 200 2574
+INFO 2016-12-08 20:49:52,090 basehttp 7584 7120 "GET /del/?todoid=1 HTTP/1.1" 302 0
+INFO 2016-12-08 20:49:52,118 basehttp 7584 6228 "GET /login/?next=/del/%3Ftodoid%3D1 HTTP/1.1" 200 2728
+DEBUG 2016-12-08 20:50:27,858 utils 8688 8704 (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-08 20:50:27,858 utils 8688 8704 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2016-12-08 20:50:27,889 utils 8668 8708 (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-08 20:50:27,889 utils 8668 8708 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-08 20:50:30,856 views 8688 8776 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-08 20:50:30,874 utils 8688 8776 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-08 20:50:30,882 basehttp 8688 8776 "GET / HTTP/1.1" 200 2574
+DEBUG 2016-12-08 20:50:32,668 utils 8688 8840 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 1; args=(1,)
+DEBUG 2016-12-08 20:50:32,668 utils 8688 8840 (0.000) BEGIN; args=None
+DEBUG 2016-12-08 20:50:32,697 utils 8688 8840 (0.024) DELETE FROM "default_todolist" WHERE "default_todolist"."id" IN (1); args=(1,)
+DEBUG 2016-12-08 20:50:32,748 utils 8688 8840 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-08 20:50:32,752 basehttp 8688 8840 "GET /del/?todoid=1 HTTP/1.1" 200 2133
+INFO 2016-12-08 20:50:57,974 basehttp 8688 9048 "GET /login/ HTTP/1.1" 200 2728
+DEBUG 2016-12-09 11:09:43,602 utils 3816 7876 (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-09 11:09:43,602 utils 3816 7876 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2016-12-14 09:23:36,083 utils 6652 6692 (0.016) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-14 09:23:36,083 utils 6652 6692 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2016-12-14 18:57:03,099 utils 5912 10088 (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-14 18:57:03,115 utils 5912 10088 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-14 18:58:57,624 views 5912 4376 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-14 18:58:57,656 utils 5912 4376 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 18:58:57,668 basehttp 5912 4376 "GET / HTTP/1.1" 200 2133
+DEBUG 2016-12-14 18:58:58,132 base 5912 6352 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^add/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^update/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^del/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^login/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^logout/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2016-12-14 18:58:58,152 base 5912 6352 Not Found: /favicon.ico
+WARNING 2016-12-14 18:58:58,152 basehttp 5912 6352 "GET /favicon.ico HTTP/1.1" 404 2867
+INFO 2016-12-14 18:59:00,853 basehttp 5912 10288 "GET /update/?todoid=3 HTTP/1.1" 302 0
+INFO 2016-12-14 18:59:00,863 basehttp 5912 8212 "GET /login/?next=/update/%3Ftodoid%3D3 HTTP/1.1" 200 2728
+DEBUG 2016-12-14 18:59:09,631 utils 5912 3196 (0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=('admin',)
+INFO 2016-12-14 18:59:09,680 basehttp 5912 3196 "POST /login/ HTTP/1.1" 302 0
+INFO 2016-12-14 18:59:09,683 views 5912 2344 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-14 18:59:09,687 utils 5912 2344 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 18:59:09,687 basehttp 5912 2344 "GET / HTTP/1.1" 200 2133
+INFO 2016-12-14 18:59:11,719 basehttp 5912 2384 "GET /update/?todoid=3 HTTP/1.1" 302 0
+INFO 2016-12-14 18:59:11,735 basehttp 5912 7984 "GET /login/?next=/update/%3Ftodoid%3D3 HTTP/1.1" 200 2728
+DEBUG 2016-12-14 18:59:31,252 utils 10044 1096 (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-14 18:59:31,252 utils 10044 1096 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+DEBUG 2016-12-14 18:59:39,929 utils 10548 7020 (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-14 18:59:39,945 utils 10548 7020 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-14 18:59:41,966 views 10548 1972 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-14 18:59:41,987 utils 10548 1972 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 18:59:41,995 basehttp 10548 1972 "GET / HTTP/1.1" 200 2133
+DEBUG 2016-12-14 18:59:43,812 utils 10548 148 (0.004) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 3; args=(3,)
+INFO 2016-12-14 18:59:43,820 basehttp 10548 148 "GET /update/?todoid=3 HTTP/1.1" 200 1175
+DEBUG 2016-12-14 18:59:53,372 utils 10548 10020 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 3; args=(3,)
+DEBUG 2016-12-14 18:59:53,372 utils 10548 10020 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 18:59:53,376 utils 10548 10020 (0.004) UPDATE "default_todolist" SET "content" = 'Ê¯Ïþµ¤´óÉµ' WHERE "default_todolist"."id" = 3; args=('Ê¯Ïþµ¤´óÉµ', 3)
+DEBUG 2016-12-14 18:59:53,420 utils 10548 10020 (0.004) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 18:59:53,424 basehttp 10548 10020 "POST /update/ HTTP/1.1" 200 2136
+DEBUG 2016-12-14 18:59:55,831 utils 10548 10352 (0.004) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 4; args=(4,)
+DEBUG 2016-12-14 18:59:55,831 utils 10548 10352 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 18:59:55,855 utils 10548 10352 (0.024) DELETE FROM "default_todolist" WHERE "default_todolist"."id" IN (4); args=(4,)
+DEBUG 2016-12-14 18:59:55,883 utils 10548 10352 (0.004) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 18:59:55,883 basehttp 10548 10352 "GET /del/?todoid=4 HTTP/1.1" 200 1694
+INFO 2016-12-14 18:59:58,074 basehttp 10548 10396 "GET /add/ HTTP/1.1" 200 1102
+DEBUG 2016-12-14 19:00:01,682 utils 10548 2400 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 19:00:01,686 utils 10548 2400 (0.000) INSERT INTO "default_todolist" ("content") VALUES ('É¶'); args=['É¶']
+DEBUG 2016-12-14 19:00:01,716 utils 10548 2400 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 19:00:01,717 basehttp 10548 2400 "POST /add/ HTTP/1.1" 200 2135
+DEBUG 2016-12-14 19:00:05,198 utils 10548 7420 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 5; args=(5,)
+DEBUG 2016-12-14 19:00:05,198 utils 10548 7420 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 19:00:05,202 utils 10548 7420 (0.000) DELETE FROM "default_todolist" WHERE "default_todolist"."id" IN (5); args=(5,)
+DEBUG 2016-12-14 19:00:05,225 utils 10548 7420 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 19:00:05,229 basehttp 10548 7420 "GET /del/?todoid=5 HTTP/1.1" 200 1694
+DEBUG 2016-12-14 19:00:07,246 utils 10548 3384 (0.004) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 3; args=(3,)
+DEBUG 2016-12-14 19:00:07,246 utils 10548 3384 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 19:00:07,270 utils 10548 3384 (0.024) DELETE FROM "default_todolist" WHERE "default_todolist"."id" IN (3); args=(3,)
+DEBUG 2016-12-14 19:00:07,302 utils 10548 3384 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 19:00:07,311 basehttp 10548 3384 "GET /del/?todoid=3 HTTP/1.1" 200 1241
+INFO 2016-12-14 19:00:09,703 basehttp 10548 6788 "GET /add/ HTTP/1.1" 200 1102
+DEBUG 2016-12-14 19:00:11,562 utils 10548 10840 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 19:00:11,566 utils 10548 10840 (0.004) INSERT INTO "default_todolist" ("content") VALUES ('111'); args=['111']
+DEBUG 2016-12-14 19:00:11,590 utils 10548 10840 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 19:00:11,590 basehttp 10548 10840 "POST /add/ HTTP/1.1" 200 1682
+INFO 2016-12-14 19:00:15,874 basehttp 10548 88 "GET /login/ HTTP/1.1" 200 2728
+DEBUG 2016-12-14 19:00:23,865 utils 10548 10856 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin'; args=('admin',)
+DEBUG 2016-12-14 19:00:23,973 utils 10548 10856 (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '5mkwyzxugv88dmmg0i35l8fzbfbv82ec' LIMIT 1; args=('5mkwyzxugv88dmmg0i35l8fzbfbv82ec',)
+DEBUG 2016-12-14 19:00:23,973 utils 10548 10856 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 19:00:23,977 utils 10548 10856 (0.004) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '5mkwyzxugv88dmmg0i35l8fzbfbv82ec', 'Y2QxNTM5ZDY1YTFlM2EyNTYxYTQ2ZjhkN2M2MmNjN2YyY2Q4NWQwMjp7fQ==', '2016-12-28 11:00:23.973976'; args=('5mkwyzxugv88dmmg0i35l8fzbfbv82ec', 'Y2QxNTM5ZDY1YTFlM2EyNTYxYTQ2ZjhkN2M2MmNjN2YyY2Q4NWQwMjp7fQ==', '2016-12-28 11:00:23.973976')
+DEBUG 2016-12-14 19:00:24,001 utils 10548 10856 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 19:00:24,001 utils 10548 10856 (0.000) UPDATE "auth_user" SET "last_login" = '2016-12-14 11:00:24.001905' WHERE "auth_user"."id" = 1; args=('2016-12-14 11:00:24.001905', 1)
+DEBUG 2016-12-14 19:00:24,026 utils 10548 10856 (0.000) BEGIN; args=None
+DEBUG 2016-12-14 19:00:24,029 utils 10548 10856 (0.000) UPDATE "django_session" SET "session_data" = 'NGJmNzljN2YyMDlmYTMzOTI3NmQwMmM3Mjk1MWQ3YzBhOWQ1M2QzYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiI2Yzg1OWE4MTBjNDMyZWE4MTRmNzI4NTZmZjQyZmFhMTVlOWMyYWM2In0=', "expire_date" = '2016-12-28 11:00:24.026236' WHERE "django_session"."session_key" = '5mkwyzxugv88dmmg0i35l8fzbfbv82ec'; args=('NGJmNzljN2YyMDlmYTMzOTI3NmQwMmM3Mjk1MWQ3YzBhOWQ1M2QzYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiI2Yzg1OWE4MTBjNDMyZWE4MTRmNzI4NTZmZjQyZmFhMTVlOWMyYWM2In0=', '2016-12-28 11:00:24.026236', '5mkwyzxugv88dmmg0i35l8fzbfbv82ec')
+INFO 2016-12-14 19:00:24,054 basehttp 10548 10856 "POST /login/ HTTP/1.1" 302 0
+INFO 2016-12-14 19:00:24,061 views 10548 7812 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-14 19:00:24,064 utils 10548 7812 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-14 19:00:24,065 basehttp 10548 7812 "GET / HTTP/1.1" 200 1682
+DEBUG 2016-12-17 19:20:06,712 utils 4012 1156 (0.016) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 1; args=(1,)
+DEBUG 2016-12-17 20:38:07,471 utils 9000 9200 (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+DEBUG 2016-12-17 20:38:07,487 utils 9000 9200 (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+INFO 2016-12-17 20:38:09,763 views 9000 6076 XXXXXXXXXXXXXXXXXXXXXXXXlogging
+DEBUG 2016-12-17 20:38:09,780 utils 9000 6076 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-17 20:38:09,787 basehttp 9000 6076 "GET / HTTP/1.1" 200 1682
+DEBUG 2016-12-17 20:38:10,237 base 9000 1540 Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^add/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^update/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^del/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^login/$>], [<RegexURLResolver <module 'default.urls' from 'C:\\Users\\¹ùå«ÌÎ\\Desktop\\todolist2_login\\default\\urls.py'> (None:None) ^>, <RegexURLPattern None ^logout/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python35-32\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+WARNING 2016-12-17 20:38:10,254 base 9000 1540 Not Found: /favicon.ico
+WARNING 2016-12-17 20:38:10,255 basehttp 9000 1540 "GET /favicon.ico HTTP/1.1" 404 2867
+DEBUG 2016-12-17 20:38:11,840 utils 9000 6400 (0.002) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 6; args=(6,)
+INFO 2016-12-17 20:38:11,866 basehttp 9000 6400 "GET /update/?todoid=6 HTTP/1.1" 200 1166
+DEBUG 2016-12-17 20:38:14,526 utils 9000 5540 (0.000) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist" WHERE "default_todolist"."id" = 6; args=(6,)
+DEBUG 2016-12-17 20:38:14,526 utils 9000 5540 (0.000) BEGIN; args=None
+DEBUG 2016-12-17 20:38:14,531 utils 9000 5540 (0.004) UPDATE "default_todolist" SET "content" = '111ßÀßÀßÀ' WHERE "default_todolist"."id" = 6; args=('111ßÀßÀßÀ', 6)
+DEBUG 2016-12-17 20:38:14,560 utils 9000 5540 (0.001) SELECT "default_todolist"."id", "default_todolist"."content" FROM "default_todolist"; args=()
+INFO 2016-12-17 20:38:14,561 basehttp 9000 5540 "POST /update/ HTTP/1.1" 200 1691

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>添加备忘记录</h1>
+<label>请输入内容：</label>
+<input type="text" id="todo" />
+<button id="save">确定</button>
+<button id="jqueryget">确定--jqueryget</button>
+<button id="jquerypost">确定--jquerypost</button>
+<button id="jqueryajax">确定--jqueryajax</button>
+
+<p id="addResult"></p>
+
+<script>
+    document.getElementById("save").onclick = function(){
+        var xhr = new XMLHttpRequest()
+        xhr.open("POST","/api/addtodo/")
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+        var data="todo="+document.getElementById("todo").value
+        xhr.send(data)
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    var result = JSON.parse(xhr.responseText)
+                    document.getElementById("addResult").innerHTML = result.status
+                } else {
+                    alert("error:"+xhr.status)
+                }
+            }
+        }
+    }
+
+    $(document).ready(function () {
+                $("#jqueryget").click(function () {
+                            $.get("/api/addtodo/", {todo: $("#todo").val()}, function (data, status) {
+                                $('#addResult').text(data.message)
+                            })
+                        }
+                )
+
+                $("#jquerypost").click(function () {
+                    $.post("/api/addtodo/", {todo: $("#todo").val()}, function (data, status) {
+                        $('#addResult').text(data.message)
+                    })
+                })
+                $("#jqueryajax").click(function(){
+                            $.ajax({
+                                type: "POST",
+                                url:"/api/addtodo/",
+                                data: {todo: $("#todo").val()},
+                                success: function (data, status) {
+                                    $('#addResult').text(data.message)
+                                },
+                            })
+                        }
+
+                )
+
+            }
+
+    )
+</script>
+
+</body>
+</html>
